@@ -1,0 +1,17 @@
+@font-face {
+    font-family: "iconfont";
+    src: url("./assets/social-font-1.ttf") format('truetype');
+}
+
+.icon {
+    font-family: 'iconfont';
+    font-size: 30px;
+}
+
+.hello {
+    color: red;
+}
+
+.block-bg {
+    background-image: url("./assets/2-png.png") !important;
+}
