@@ -11,6 +11,7 @@ import "./style.css"; // 引入 CSS 文件
 import "./style.less"; // 引入 LESS 文件
 
 import _ from "lodash";
+import "./async-module.js"; // 引入异步模块
 
 console.log(add(1, 2)); // 3
 console.log(miuns(3, 2)); // 1
@@ -47,3 +48,12 @@ console.log(xmlsrc); // 打印 XML 文件路径
 helloWorld();
 
 console.log(_.join(['Hello', 'webpack'], ' ')); // 使用 Lodash 库
+
+const button = document.createElement("button"); // 创建按钮
+button.innerText = "点击执行加法运算"; // 设置按钮文本
+button.onclick = () => {
+    import(/* webpackChunkName: "math-async", webpackPrefetch: true */ "./helper/math-async.js").then(({ add }) => { // 动态导入加法函数
+        console.log(add(1, 2)); // 3
+    });
+}
+document.body.appendChild(button); // 将按钮添加到页面中
