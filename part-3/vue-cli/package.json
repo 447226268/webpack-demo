@@ -1,0 +1,51 @@
+{
+  "name": "vue-cli",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm run dev",
+    "dev": "cross-env NODE_ENV=development webpack serve --config ./config/webpack.config.js",
+    "build": "cross-env NODE_ENV=production webpack --config ./config/webpack.config.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@babel/core": "^7.27.1",
+    "@eslint/js": "^9.26.0",
+    "@vue/cli-plugin-babel": "^5.0.8",
+    "babel-loader": "^10.0.0",
+    "copy-webpack-plugin": "^13.0.0",
+    "cross-env": "^7.0.3",
+    "css-loader": "^7.1.2",
+    "css-minimizer-webpack-plugin": "^7.0.2",
+    "eslint": "^9.26.0",
+    "eslint-plugin-vue": "^10.1.0",
+    "eslint-webpack-plugin": "^5.0.1",
+    "globals": "^16.1.0",
+    "html-webpack-plugin": "^5.6.3",
+    "less": "^4.3.0",
+    "less-loader": "^12.3.0",
+    "mini-css-extract-plugin": "^2.9.2",
+    "postcss-loader": "^8.1.1",
+    "postcss-preset-env": "^10.1.6",
+    "sass": "^1.88.0",
+    "sass-loader": "^16.0.5",
+    "style-loader": "^4.0.0",
+    "stylus-loader": "^8.1.1",
+    "terser-webpack-plugin": "^5.3.14",
+    "unplugin-auto-import": "^19.2.0",
+    "unplugin-vue-components": "^28.5.0",
+    "vue-loader": "^17.4.2",
+    "vue-template-compiler": "^2.7.16",
+    "webpack": "^5.99.8",
+    "webpack-cli": "^6.0.1",
+    "webpack-dev-server": "^5.2.1"
+  },
+  "dependencies": {
+    "element-plus": "^2.9.10",
+    "vue": "^3.5.13",
+    "vue-router": "^4.5.1"
+  }
+}
