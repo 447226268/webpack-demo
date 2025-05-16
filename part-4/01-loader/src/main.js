@@ -10,3 +10,5 @@ console.log("hello 44");
 const sum = (...args) => {
     return args.reduce((a, b) => a + b, 0);
 }
+
+import "./main.css"

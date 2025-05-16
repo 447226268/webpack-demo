@@ -31,9 +31,21 @@ module.exports = {
                         options: {
                             author: "zhouxinn",
                         }
+                    },
+                    {
+                        loader: "./loaders/babel-loader",
+                        options: {
+                            presets: [
+                                "@babel/preset-env",
+                            ]
+                        }
                     }
                 ]
             },
+            {
+                test:/\.css$/,
+                use: ["style-loader", "css-loader"]
+            }
         ]
     },
     plugins: [
